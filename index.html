@@ -935,39 +935,6 @@
 
 
 
-	
-	
-	<script>
-
-var nocachevar = '';
-
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', function() {
-				navigator.serviceWorker.register('/service-worker.js' + nocachevar).then(function(registration) {
-					if ('serviceWorker' in navigator && 'PushManager' in window) {
-						notifySupport = true;
-						notifyPermission = Notification.permission;
-					}
-				}, function(err) {
-					console.log('ServiceWorker registration failed: ', err);
-				}).catch(function(err) {
-					console.log(err)
-				});
-			});
-		}
-		else
-		{
-			console.log('service worker is not supported');
-		}
-
-	</script>
-
-
-
-
-
-
-
 
 
 </body>
