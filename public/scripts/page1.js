@@ -125,15 +125,14 @@ $(document).ready(function(){
 
 
 
-/*
-    $('.block11-body_item p').click(function(){
 
-        if (!$(this).hasClass('block11-body_item_p')) { 
-            alert('OPA');
-        } 
 
+    // Кнопка подробнее
+    $('.about-button a:eq(0)').click(function(){
+        $(this).hide();
+        $('.about-text:eq(0)').show();
+        return false;
     });
-*/
 
 
 
@@ -143,17 +142,6 @@ $(document).ready(function(){
 
 
 
-
-
-/*
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-        options: {
-            Thumbs: false,
-          } 
-
-        });
-*/
 
 
 
