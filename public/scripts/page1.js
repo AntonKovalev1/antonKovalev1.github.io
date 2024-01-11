@@ -35,6 +35,16 @@ $(document).ready(function(){
 
 
 
+/*
+    $('.servicopen').click(function () {
+        $(this).parent().toggleClass('in').next().slideToggle();
+        $('.servicopen').not(this).parent().removeClass('in').next().slideUp();
+    });
+*/
+
+
+
+
 
     /***  Top Menu  ***/
 
