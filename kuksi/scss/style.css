@@ -1,0 +1,2433 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+ul {
+  list-style: none;
+}
+
+body * {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../fonts/Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Geologica-ExtraLight";
+  src: url("../fonts/Geologica-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Geologica-Regular";
+  src: url("../fonts/Geologica-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("../fonts/Rubik-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("../fonts/Rubik-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("../fonts/Rubik-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Rubik-ExtraBold";
+  src: url("../fonts/Rubik-ExtraBold.woff") format("woff");
+}
+/*цвета*/
+/*шрифты*/
+.footer__info .footer__app-link, .in-basket {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Geologica-ExtraLight";
+  padding: 6px 28px;
+  border-radius: 17px;
+  background-color: #E8222F;
+  transition: all 0.5s;
+  border: 1px solid #E8222F;
+}
+.footer__info .footer__app-link:hover, .in-basket:hover {
+  background-color: transparent;
+  color: #fff;
+}
+@media (max-width: 1300px) {
+  .footer__info .footer__app-link, .in-basket {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1150px) {
+  .footer__info .footer__app-link, .in-basket {
+    font-size: 15px;
+    padding: 6px 15px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../images/sitebg.webp");
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+body > main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1254px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 100%;
+    padding: 0 38px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+h2 {
+  color: #fff;
+  text-shadow: 0px 2px 4px #000;
+  font-family: "Rubik-ExtraBold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+@media (max-width: 1400px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  color: #fff;
+  font-family: "Rubik-ExtraBold";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  color: #fff;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+header.scroll__bg-color {
+  background-color: #111;
+}
+
+.header__cnt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 38px 15px 33px 15px;
+  width: 1460px;
+  margin: 0 auto;
+}
+@media (max-width: 1460px) {
+  .header__cnt {
+    padding: 20px 15px 20px 15px;
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .header__cnt {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 15px;
+  }
+}
+
+.header__burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 28px;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .header__burger {
+    width: 25px;
+    height: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__burger {
+    order: 2;
+  }
+}
+
+.header__burger span {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  top: 13px;
+  transition: all 0.5s ease 0s;
+}
+@media (max-width: 1200px) {
+  .header__burger span {
+    top: 9px;
+  }
+}
+
+.header__burger::before, .header__burger::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.header__burger.active-burger span {
+  transform: scale(0);
+}
+
+.header__burger.active-burger::before {
+  transform: rotate(45deg);
+  top: 13px;
+}
+@media (max-width: 1200px) {
+  .header__burger.active-burger::before {
+    top: 9px;
+  }
+}
+
+.header__burger.active-burger::after {
+  transform: rotate(-45deg);
+  bottom: 13px;
+}
+@media (max-width: 1200px) {
+  .header__burger.active-burger::after {
+    bottom: 9px;
+  }
+}
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 68px;
+  padding: 6px 8px 8px 8px;
+  border-radius: 18px;
+  border: 2px solid #fff;
+}
+.basket img {
+  width: 24px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1100px) {
+  .basket img {
+    width: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  .basket {
+    margin: 0 30px;
+  }
+}
+
+.basket__name, .basket__value {
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Rubik-Regular";
+  color: #fff;
+}
+
+.basket__name {
+  font-size: 13px;
+}
+@media (max-width: 1100px) {
+  .basket__name {
+    font-size: 12px;
+  }
+}
+
+.basket__value {
+  font-size: 16px;
+  margin-top: 2px;
+}
+@media (max-width: 1460px) {
+  .basket__value {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1300px) {
+  .basket__value {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  .basket__value {
+    font-size: 13px;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 174px;
+  height: auto;
+  align-self: center;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1460px) {
+  .header__logo {
+    width: 150px;
+  }
+}
+@media (max-width: 1300px) {
+  .header__logo {
+    width: 140px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    width: 120px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__logo {
+    order: -1;
+    margin-right: auto;
+  }
+}
+
+.header__menu nav {
+  margin-bottom: 13px;
+}
+@media (max-width: 1460px) {
+  .header__menu nav {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__menu nav {
+    display: none;
+  }
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__list li + li {
+  margin-left: 20px;
+}
+@media (max-width: 1300px) {
+  .header__list li + li {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__list li + li {
+    margin-left: 10px;
+  }
+}
+.header__list li:nth-child(1) a {
+  border: 2px solid #FBFBFB;
+  border-radius: 500px;
+  padding: 6px 10px;
+}
+.header__list li:nth-child(1) a:hover {
+  border-color: #E8222F;
+}
+@media (max-width: 1460px) {
+  .header__list li:nth-child(1) a {
+    padding: 5px 8px;
+  }
+}
+@media (max-width: 1300px) {
+  .header__list li:nth-child(1) a {
+    padding: 5px;
+    border-radius: 15px;
+  }
+}
+.header__list a {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Geologica-Regular";
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.header__list a:hover {
+  color: #E8222F;
+}
+@media (max-width: 1460px) {
+  .header__list a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1300px) {
+  .header__list a {
+    font-size: 14px;
+  }
+}
+
+.header__menu-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .header__menu-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.header__menu-left {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+}
+@media (max-width: 1460px) {
+  .header__menu-left {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1300px) {
+  .header__menu-left {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__menu-left {
+    margin-bottom: 10px;
+  }
+}
+
+.header__menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item + .menu__item {
+  margin-left: 32px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.menu__item input {
+  display: none;
+}
+.menu__item .menu__item-circle {
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  margin-left: 8px;
+}
+.menu__item .menu__item-circle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #E8222F;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+@media (max-width: 1460px) {
+  .menu__item .menu__item-circle::before {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 1460px) {
+  .menu__item .menu__item-circle {
+    width: 20px;
+    height: 20px;
+  }
+}
+.menu__item.menu__item-active {
+  color: #E8222F;
+}
+.menu__item.menu__item-active .menu__item-circle {
+  border-color: #E8222F;
+}
+.menu__item.menu__item-active .menu__item-circle::before {
+  content: "";
+  opacity: 1;
+}
+@media (max-width: 1460px) {
+  .menu__item {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1300px) {
+  .menu__item {
+    font-size: 14px;
+  }
+}
+
+/*mob menu*/
+.mob__menu {
+  min-width: 1030px;
+  min-height: 740px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #1D1D1D;
+  padding: 40px 94px 137px 124px;
+  position: fixed;
+  top: 0;
+  left: -2000px;
+  transition: all 0.5s;
+}
+.mob__menu.active-burger {
+  left: 0;
+}
+@media (max-width: 1100px) {
+  .mob__menu.active-burger {
+    left: unset;
+    right: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .mob__menu {
+    min-height: 640px;
+    min-width: 910px;
+  }
+}
+@media (max-width: 1400px) {
+  .mob__menu {
+    min-height: 550px;
+    min-width: 770px;
+    padding: 40px 80px 80px 60px;
+  }
+}
+@media (max-width: 1300px) {
+  .mob__menu {
+    min-height: 475px;
+    min-width: 655px;
+  }
+}
+@media (max-width: 1200px) {
+  .mob__menu {
+    min-height: 435px;
+    min-width: 575px;
+  }
+}
+@media (max-width: 1100px) {
+  .mob__menu {
+    left: unset;
+    right: -2000px;
+    flex-wrap: wrap;
+    min-width: unset;
+    width: 575px;
+  }
+}
+
+.mob__app-box {
+  display: none;
+  margin-top: 15px;
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  .mob__app-box {
+    display: flex;
+  }
+}
+.mob__app-box a {
+  color: #fff;
+  font-family: "Geologica-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 16px;
+  border: 2px solid #fff;
+  border-radius: 500px;
+}
+
+.mob__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.mob__close::before, .mob__close::after {
+  content: "";
+  width: 33px;
+  height: 2px;
+  position: absolute;
+  background-color: #AEAEAE;
+}
+.mob__close::before {
+  top: 12px;
+  left: -3px;
+  transform: rotate(45deg);
+}
+.mob__close::after {
+  top: 12px;
+  right: -4px;
+  transform: rotate(-45deg);
+}
+
+.mob__menu-list li + li {
+  margin-top: 13px;
+}
+.mob__menu-list a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-weight: 800;
+  line-height: normal;
+  font-size: 50px;
+  font-family: "Rubik-ExtraBold";
+}
+@media (max-width: 1500px) {
+  .mob__menu-list a {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  .mob__menu-list a {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1300px) {
+  .mob__menu-list a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1200px) {
+  .mob__menu-list a {
+    font-size: 24px;
+  }
+}
+
+.mob__logo {
+  display: block;
+  width: 198px;
+  height: auto;
+}
+.mob__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1300px) {
+  .mob__logo {
+    width: 170px;
+  }
+}
+@media (max-width: 1200px) {
+  .mob__logo {
+    width: 140px;
+  }
+}
+
+/*main*/
+.app__link-box {
+  top: 331px;
+  left: 102px;
+  position: fixed;
+  border-radius: 500px;
+  border: 2px solid #fff;
+  z-index: 10;
+  transition: all 0.5s;
+  width: 48px;
+  height: 311px;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+}
+.app__link-box:hover {
+  color: #111;
+  background-color: #E8222F;
+  border: 2px solid #E8222F;
+}
+@media (max-width: 1700px) {
+  .app__link-box {
+    left: 50px;
+  }
+}
+@media (max-width: 1500px) {
+  .app__link-box {
+    left: 15px;
+  }
+}
+@media (max-width: 1400px) {
+  .app__link-box {
+    font-size: 14px;
+    height: 265px;
+    width: 30px;
+    left: 5px;
+  }
+}
+@media (max-width: 1100px) {
+  .app__link-box {
+    display: none;
+  }
+}
+
+.app__link {
+  transform: rotate(270deg);
+  width: 271px;
+  height: 20px;
+  position: absolute;
+  line-height: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Geologica-Regular";
+}
+@media (max-width: 1400px) {
+  .app__link {
+    font-size: 14px;
+    width: 238px;
+    height: 16px;
+  }
+}
+
+.main__slider-wrapper {
+  padding-top: 185px;
+  margin-bottom: 159px;
+}
+@media (max-width: 1460px) {
+  .main__slider-wrapper {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 1100px) {
+  .main__slider-wrapper {
+    padding-top: 120px;
+    margin-bottom: 100px;
+  }
+}
+
+.main__slider-container {
+  position: relative;
+  width: 84%;
+  margin-left: auto;
+  border-radius: 25px 0px 0px 25px;
+  overflow: hidden;
+}
+@media (max-width: 1700px) {
+  .main__slider-container {
+    width: 88%;
+  }
+}
+@media (max-width: 1600px) {
+  .main__slider-container {
+    width: 91%;
+  }
+}
+@media (max-width: 1500px) {
+  .main__slider-container {
+    width: 93%;
+  }
+}
+@media (max-width: 1100px) {
+  .main__slider-container {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.main__slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 682px;
+  padding: 70px 50px 50px 103px;
+}
+@media (max-width: 1400px) {
+  .main__slide {
+    min-height: 650px;
+    padding: 70px 50px 50px 70px;
+  }
+}
+@media (max-width: 1200px) {
+  .main__slide {
+    min-height: 590px;
+    padding: 70px 50px 50px 70px;
+  }
+}
+@media (max-width: 1100px) {
+  .main__slide {
+    min-height: 510px;
+    padding: 50px 20px 40px 20px;
+  }
+}
+
+.main__slide-cnt {
+  width: 790px;
+}
+.main__slide-cnt .main__slide-title {
+  color: #fff;
+  font-family: "Rubik-ExtraBold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+@media (max-width: 1400px) {
+  .main__slide-cnt .main__slide-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .main__slide-cnt .main__slide-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1100px) {
+  .main__slide-cnt .main__slide-title {
+    font-size: 25px;
+  }
+}
+.main__slide-cnt .main__slide-info {
+  color: #fff;
+  font-family: "Rubik-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+@media (max-width: 1400px) {
+  .main__slide-cnt .main__slide-info {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  .main__slide-cnt .main__slide-info {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .main__slide-cnt .main__slide-info {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .main__slide-cnt {
+    width: 730px;
+  }
+}
+@media (max-width: 1100px) {
+  .main__slide-cnt {
+    width: 680px;
+  }
+}
+
+.main__slide-btn {
+  position: relative;
+  transition: all 0.5s;
+  color: #E8222F;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Geologica-Regular";
+  display: inline-block;
+}
+.main__slide-btn::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 54px;
+  right: -40px;
+  bottom: -15px;
+  transition: all 0.5s;
+  background-image: url("../images/mainslidebtn.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 1100px) {
+  .main__slide-btn::before {
+    width: 41px;
+    height: 45px;
+    right: -30px;
+  }
+}
+.main__slide-btn:hover::before {
+  right: -25px;
+}
+@media (max-width: 1100px) {
+  .main__slide-btn {
+    font-size: 16px;
+  }
+}
+
+.main__slider-container .swiper-button-prev:after, .main__slider-container .swiper-container-rtl .swiper-button-next:after {
+  content: "";
+}
+
+.main__slider-container .swiper-button-next:after, .main__slider-container .swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+}
+
+.main__slider-container .swiper-button-prev, .main__slider-container .swiper-container-rtl .swiper-button-next {
+  width: 80px;
+  height: 16px;
+  background-image: url("../images/mainsliderleft.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  transition: all 0.5s;
+  left: unset;
+  right: 364px;
+  top: unset;
+  bottom: 44px;
+  margin-top: unset;
+  z-index: 1;
+  opacity: 0.7;
+}
+.main__slider-container .swiper-button-prev:hover, .main__slider-container .swiper-container-rtl .swiper-button-next:hover {
+  opacity: 1;
+}
+.main__slider-container .swiper-button-prev::before, .main__slider-container .swiper-container-rtl .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  height: 54px;
+  width: 49px;
+  left: -25px;
+  z-index: -1;
+  background-image: url("../images/mainsliderleftcircle.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.main__slider-container .swiper-button-prev:hover::before, .main__slider-container .swiper-container-rtl .swiper-button-next:hover::before {
+  opacity: 1;
+}
+@media (max-width: 1300px) {
+  .main__slider-container .swiper-button-prev, .main__slider-container .swiper-container-rtl .swiper-button-next {
+    right: 220px;
+  }
+}
+
+.main__slider-container .swiper-button-next, .main__slider-container .swiper-container-rtl .swiper-button-prev {
+  width: 80px;
+  height: 16px;
+  background-image: url("../images/mainsliderright.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  margin-top: unset;
+  transition: all 0.5s;
+  right: 256px;
+  top: unset;
+  bottom: 44px;
+  z-index: 1;
+  opacity: 0.7;
+}
+.main__slider-container .swiper-button-next:hover, .main__slider-container .swiper-container-rtl .swiper-button-prev:hover {
+  opacity: 1;
+}
+.main__slider-container .swiper-button-next::before, .main__slider-container .swiper-container-rtl .swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  height: 54px;
+  width: 49px;
+  right: -25px;
+  z-index: -1;
+  background-image: url("../images/mainsliderrightcircle.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.main__slider-container .swiper-button-next:hover::before, .main__slider-container .swiper-container-rtl .swiper-button-prev:hover::before {
+  opacity: 1;
+}
+@media (max-width: 1300px) {
+  .main__slider-container .swiper-button-next, .main__slider-container .swiper-container-rtl .swiper-button-prev {
+    right: 100px;
+  }
+}
+
+.products__wrapper + .products__wrapper {
+  margin-top: 72px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: -12px;
+}
+
+.prod__card {
+  width: calc(25% - 24px);
+  margin: 12px;
+  height: 565px;
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 23px;
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.prod__card:hover {
+  border-color: #E8222F;
+}
+.prod__card.rotated {
+  transform: rotateY(-180deg);
+}
+.prod__card.disabled {
+  filter: grayscale(100%);
+}
+.prod__card.disabled .in-basket, .prod__card.disabled .compound, .prod__card.disabled .basket-quantity__btn {
+  pointer-events: none;
+}
+@media (max-width: 990px) {
+  .prod__card {
+    width: calc(33% - 24px);
+  }
+}
+@media (max-width: 1300px) {
+  .prod__card {
+    height: 550px;
+  }
+}
+@media (max-width: 1200px) {
+  .prod__card {
+    height: 520px;
+  }
+}
+@media (max-width: 1150px) {
+  .prod__card {
+    height: 500px;
+  }
+}
+
+.card__contents {
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.card__contents .card__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 23px 23px 0 0;
+  margin-bottom: 12px;
+}
+
+.card__contents-text {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+@media (max-width: 1150px) {
+  .card__contents-text {
+    padding: 0 10px 15px 10px;
+  }
+}
+
+.card__contents-top {
+  margin-bottom: auto;
+}
+
+.card__delivery {
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.prod__name {
+  color: #000;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 22px;
+  font-family: "Geologica-Regular";
+  margin-bottom: 8px;
+}
+@media (max-width: 1300px) {
+  .prod__name {
+    font-size: 20px;
+  }
+}
+
+.prod__info {
+  color: #000;
+  line-height: normal;
+  font-weight: 200;
+  font-size: 16px;
+  font-family: "Geologica-ExtraLight";
+}
+@media (max-width: 1300px) {
+  .prod__info {
+    font-size: 15px;
+  }
+}
+
+.card__delivery p {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  color: #000;
+  line-height: normal;
+  font-weight: 200;
+  font-size: 16px;
+  font-family: "Geologica-ExtraLight";
+}
+.card__delivery p img {
+  width: 15px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 8px;
+}
+@media (max-width: 1300px) {
+  .card__delivery p {
+    font-size: 15px;
+  }
+}
+.card__delivery p + p {
+  margin-top: 11px;
+}
+@media (max-width: 1300px) {
+  .card__delivery p + p {
+    margin-top: 5px;
+  }
+}
+
+.card__bottom-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basket-quantity__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid #E8222F;
+  padding: 7.5px 17.5px;
+  width: 90px;
+}
+
+.basket-quantity__value {
+  color: #000;
+  font-family: "Geologica-ExtraLight";
+  font-weight: 200;
+  font-size: 16px;
+  line-height: normal;
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  padding: unset;
+  border: none;
+  border-radius: unset;
+  background-color: transparent;
+}
+
+.basket-quantity__btn {
+  color: #000;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Geologica-ExtraLight";
+  font-size: 16px;
+  background-color: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+.prod__price {
+  color: #000;
+  font-family: "Rubik-Medium";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 1300px) {
+  .prod__price {
+    font-size: 23px;
+  }
+}
+
+.card__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.in-basket {
+  cursor: pointer;
+}
+.in-basket:hover {
+  color: #E8222F;
+}
+
+.compound {
+  background-color: transparent;
+  cursor: pointer;
+  color: #E8222F;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Geologica-ExtraLight";
+}
+@media (max-width: 1300px) {
+  .compound {
+    font-size: 16px;
+  }
+}
+
+.compound__mob-open {
+  display: none;
+}
+
+.compound__mob-close {
+  display: none;
+}
+
+.card-back-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media (max-width: 1150px) {
+  .card-back-text {
+    padding: 15px 10px 15px 10px;
+  }
+}
+
+.back__prod-name {
+  color: #000;
+  font-family: "Geologica-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+@media (max-width: 1300px) {
+  .back__prod-name {
+    font-size: 20px;
+  }
+}
+
+.prod__articul {
+  color: #000;
+  font-family: "Geologica-ExtraLight";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: normal;
+}
+@media (max-width: 1300px) {
+  .prod__articul {
+    font-size: 15px;
+  }
+}
+
+.compound__title {
+  color: #000;
+  font-family: "Geologica-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 1300px) {
+  .compound__title {
+    font-size: 16px;
+  }
+}
+
+.compound__box {
+  margin-top: 20px;
+}
+.compound__box p {
+  color: #000;
+  font-family: "Geologica-ExtraLight";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+@media (max-width: 1300px) {
+  .compound__box p {
+    font-size: 15px;
+  }
+}
+.compound__box p + p {
+  margin: 0;
+}
+.compound__box ul {
+  padding-left: 10px;
+  margin: 5px 0;
+}
+.compound__box ul li {
+  color: #000;
+  font-family: "Geologica-ExtraLight";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: normal;
+  position: relative;
+  padding-left: 10px;
+}
+.compound__box ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+}
+@media (max-width: 1300px) {
+  .compound__box ul li {
+    font-size: 15px;
+  }
+}
+
+/*.compound__desc, .prod__weight {
+    color: #000;
+    font-family: $geoELight;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: normal;
+}*/
+/*.compound__desc {
+    margin-bottom: 12px;
+}*/
+.card-front {
+  transform-style: preserve-3d;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+/*footer*/
+footer {
+  padding: 0 0 100px 0;
+  margin-top: 200px;
+}
+@media (max-width: 1100px) {
+  footer {
+    padding: 0 0 50px 0;
+    margin-top: 150px;
+  }
+}
+
+.footer__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  width: 287px;
+  height: 275px;
+}
+@media (max-width: 1100px) {
+  .footer__menu {
+    width: 210px;
+    height: 205px;
+  }
+}
+
+.footer__nav {
+  width: 360px;
+  height: 160px;
+}
+@media (max-width: 1100px) {
+  .footer__nav {
+    width: 280px;
+    height: 120px;
+  }
+}
+
+.footer__menu, .footer__nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer__menu li, .footer__nav li {
+  margin-bottom: 16px;
+}
+@media (max-width: 1100px) {
+  .footer__menu li, .footer__nav li {
+    margin-bottom: 10px;
+  }
+}
+.footer__menu a, .footer__nav a {
+  color: #fff;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 18px;
+  font-family: "Geologica-Regular";
+  transition: all 0.5s;
+}
+.footer__menu a:hover, .footer__nav a:hover {
+  color: #E8222F;
+}
+@media (max-width: 1300px) {
+  .footer__menu a, .footer__nav a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__menu a, .footer__nav a {
+    font-size: 15px;
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__info .footer__app-link {
+  width: 345px;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  .footer__info .footer__app-link {
+    width: 315px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__info .footer__app-link {
+    width: 270px;
+  }
+}
+.footer__info .footer__info-item + .footer__info-item {
+  margin-top: 24px;
+}
+@media (max-width: 1100px) {
+  .footer__info .footer__info-item + .footer__info-item {
+    margin-top: 15px;
+  }
+}
+.footer__info .footer__item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  color: #fff;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1300px) {
+  .footer__info .footer__item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__info .footer__item {
+    font-size: 15px;
+  }
+}
+.footer__info .footer__item + .footer__item {
+  margin-top: 16px;
+}
+@media (max-width: 1100px) {
+  .footer__info .footer__item + .footer__item {
+    margin-top: 10px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 156px;
+  height: auto;
+  margin: -12px auto 32px auto;
+}
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1100px) {
+  .footer__logo {
+    width: 130px;
+  }
+}
+
+.footer__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__copy a {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 200;
+  font-family: "Geologica-ExtraLight";
+  transition: all 0.5s;
+}
+.footer__copy a:hover {
+  color: #E8222F;
+}
+.footer__copy a + a {
+  margin-left: 72px;
+}
+
+@media (max-width: 800px) {
+  /* низ страницы */
+  .footer__info .footer__app-link {
+    display: none;
+  }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .footer__menu {
+    width: 100%;
+    height: 222px;
+  }
+  .footer__copy a + a {
+    margin: 0;
+  }
+  .footer__copy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo {
+    margin: 40px auto;
+  }
+}
+.mobile__menufixed {
+  display: none;
+}
+
+@media (max-width: 1093px) {
+  /* фиксирующееся меню */
+  .mobile__menufixed {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    margin-top: -65px;
+    margin-bottom: 15px;
+    z-index: 1;
+  }
+  .mobile__menufixed-body {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+    height: 80px;
+  }
+  .mobile__menufixed-body2 {
+    display: flex;
+    white-space: nowrap;
+    margin: 8px 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .mobile__menufixed a {
+    font-size: 12px;
+    font-family: "Geologica-Regular";
+    font-size: 16px;
+    color: #fff;
+    border-radius: 19px;
+    line-height: 34px;
+    float: left;
+    padding: 0 15px 3px;
+    margin-right: 7px;
+  }
+  .mobile__menufixed a.activate {
+    background-color: rgb(232, 34, 47);
+  }
+}
+@media (max-width: 660px) {
+  body {
+    font-size: 16px;
+  }
+  /* Меню для десктопа */
+  header {
+    position: static;
+  }
+  .header__menu nav {
+    display: none;
+  }
+  .basket {
+    display: none;
+  }
+  /* Слайдер */
+  .main__slide-cnt .main__slide-title {
+    font-size: 17px;
+    width: 229px;
+    margin-bottom: 6px;
+  }
+  .main__slide-cnt {
+    width: 100%;
+  }
+  .main__slider-wrapper {
+    padding-top: 163px;
+    margin-bottom: 87px;
+  }
+  .main__slide-cnt .main__slide-info {
+    font-size: 14px;
+  }
+  .main__slide {
+    height: 79vw;
+    min-height: 252px;
+    padding: 30px 15px 20px 20px;
+  }
+  .main__slider-container .swiper-button-prev,
+  .main__slider-container .swiper-container-rtl .swiper-button-next {
+    right: auto;
+    left: 20px;
+    bottom: 8px;
+    background-size: 45px;
+  }
+  .main__slider-container .swiper-button-next,
+  .main__slider-container .swiper-container-rtl .swiper-button-prev {
+    right: 20px;
+    bottom: 8px;
+    background-size: 45px;
+  }
+  .main__slide-btn {
+    position: absolute;
+    bottom: 55px;
+    font-size: 14px;
+  }
+  .prod__card {
+    width: calc(50% - 15px);
+    margin: 5px;
+    border-radius: 10px;
+    height: calc(200px + 40vw);
+  }
+  .products {
+    margin: 0 -15px 0 -5px;
+  }
+  /* Наименования */
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .card__contents .card__img {
+    margin-bottom: 0px;
+  }
+  .prod__name {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .prod__info {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .card__contents-top {
+    margin-bottom: 0px;
+    min-height: 62px;
+  }
+  .card__delivery {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  .card__delivery p {
+    font-size: 7px;
+  }
+  .basket-quantity__box {
+    display: none;
+  }
+  .prod__price {
+    font-size: 14px;
+  }
+  .card__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    flex-direction: column;
+  }
+  .compound {
+    font-size: 13px;
+  }
+  .in-basket {
+    border-radius: 12px;
+  }
+  .products__wrapper + .products__wrapper {
+    padding-top: 72px;
+    margin-top: 0;
+  }
+  /* Логотип, и кнопка открыть меню */
+  .header__logo {
+    position: absolute;
+    left: 8px;
+    top: 17px;
+    width: 158px;
+  }
+  .header__burger {
+    position: absolute;
+    right: 19px;
+    top: 17px;
+    width: 22px;
+  }
+  .mob__menu {
+    left: unset;
+    right: -100vw;
+    flex-wrap: wrap;
+    min-width: unset;
+    width: 100vw;
+  }
+  /* Блок доставка-самовывоз */
+  .header__menu {
+    position: absolute;
+    left: 21px;
+    top: 72px;
+  }
+  .header__menu-right {
+    display: block;
+  }
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+  .header__menu-left {
+    margin-bottom: 0;
+  }
+  .header__menu-left {
+    font-size: 16px;
+  }
+  .menu__item {
+    font-size: 16px;
+    line-height: 1;
+    margin-top: 11px;
+  }
+  .menu__item .menu__item-circle {
+    width: 25px;
+    height: 25px;
+  }
+  /* Меню (выезжающее) */
+  .mob__menu {
+    padding: 80px 10px 40px 10px;
+    min-height: 100vh;
+  }
+  .mob__close {
+    top: 14px;
+    right: 13px;
+    transform: scale(0.8);
+  }
+  .mob__menu-list a {
+    font-size: 18px;
+  }
+  .mob__app-box a {
+    font-size: 12px;
+  }
+}
+h1 {
+  color: #fff;
+  text-shadow: 0px 2px 4px #000;
+  font-family: "Rubik-ExtraBold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.text_content {
+  color: #fff;
+  padding-top: 240px;
+  margin-bottom: 160px;
+}
+
+.text_content h3 {
+  margin-top: 45px;
+}
+
+/* Программа лояльности */
+.container-loyalty {
+  flex-direction: row;
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 100px -12px;
+}
+
+.loyalty-cell {
+  width: calc(50% - 24px);
+  padding: 20px 0 30px;
+}
+
+.loyalty-cell img {
+  border-radius: 25px;
+}
+
+.loyalty-cell span {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 22px;
+  font-family: "Geologica-Regular";
+  margin-bottom: 27px;
+  padding-right: 80px;
+  padding-top: 23px;
+  display: block;
+}
+
+/* Галерея */
+.container-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -12px 60px -12px;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.gallery-cell {
+  width: calc(25% - 24px);
+  padding: 20px 0 30px;
+}
+
+.gallery-cell img {
+  border-radius: 20px;
+}
+
+/* Вакансии */
+.vacance-rightblock {
+  display: flex;
+  float: left;
+  width: 70%;
+  margin-left: 50px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 110px;
+}
+
+.vacance-rightblock.oformlenie-rightblock {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.vacance-rightblock-line input,
+.vacance-rightblock-line textarea {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  color: #000;
+  padding: 22px 0 22px 20px;
+  border-radius: 10px;
+  border-width: 0;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.vacance-rightblock-line textarea {
+  height: 300px;
+}
+
+.vacance-rightblock p {
+  font-weight: normal;
+  color: #fff;
+  margin: 20px 0 0 0;
+}
+
+.vacance-rightblock p a {
+  text-decoration: underline;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 8px;
+  background-color: transparent;
+  /* line-height: 22px; */
+  height: 60px;
+  padding: 5px 20px 9px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+  box-shadow: 0 0 0 2px rgb(232, 34, 47);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 49px;
+  font-family: "Geologica-Regular";
+  margin-top: 30px;
+}
+
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus + span {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+  background-color: rgb(232, 34, 47);
+}
+
+.input-file:active span {
+  background-color: rgb(232, 34, 47);
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+  background-color: #eee;
+}
+
+.send-button {
+  background-color: #e8222f;
+  color: #fff;
+  font-family: "Geologica-Regular";
+  border-radius: 10px;
+  line-height: 56px;
+  font-size: 25px;
+  padding: 0 20px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+.oformlenie-h2 h2 {
+  margin-top: 95px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.vacance-rightblock p a.moreinfo {
+  background-color: #e8222f;
+  color: #fff;
+  font-family: "Geologica-Regular";
+  border-radius: 26px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/* Радиокнопки (выбор типа резюме) */
+.vacance-leftblock {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  color: #fff;
+  float: left;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.vacance-leftblock.oformlenie-leftblock {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.vacance-leftblock-type {
+  display: flex;
+  width: 100%;
+}
+
+.vacance-leftblock label {
+  float: left;
+  padding: 24px 0 20px 20px;
+  float: left;
+  width: 100%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.54);
+  border-radius: 10px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.vacance-leftblock.oformlenie-leftblock label {
+  box-shadow: none;
+  padding: 12px 0;
+}
+
+.vacance-leftblock.oformlenie-leftblock label:hover {
+  box-shadow: none;
+}
+
+.vacance-leftblock.oformlenie-leftblock .radio {
+  margin: 0;
+}
+
+.vacance-leftblock label:hover {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.74);
+}
+
+.radio {
+  margin: 15px 0;
+}
+.radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type=radio] + .radio-label:before {
+  content: "";
+  background: rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  border: 3px solid black;
+  border: 3px solid #E8222F;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: 0;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type=radio]:checked + .radio-label:before {
+  background-color: #E8222F;
+  box-shadow: inset 0 0 0 5px rgb(0, 0, 0);
+}
+.radio input[type=radio]:focus + .radio-label:before {
+  outline: none;
+  border-color: #E8222F;
+}
+.radio input[type=radio]:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0);
+  border-color: rgba(191, 191, 191, 0);
+  background: rgba(191, 191, 191, 0);
+}
+.radio input[type=radio] + .radio-label:empty:before {
+  margin-right: 0;
+}
+
+.personaldata-div {
+  padding-bottom: 20px;
+}
+
+.personaldata-div label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  color: #fff;
+}
+
+/* Чекбокс  */
+.personaldata:not(:checked),
+.personaldata:checked {
+  position: absolute;
+  left: 0;
+  opacity: 0.01;
+}
+
+.personaldata:not(:checked) + label,
+.personaldata:checked + label {
+  position: relative;
+  padding-left: 2.3em;
+  font-size: 1.05em;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+.personaldata:not(:checked) + label:before,
+.personaldata:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  width: 28px;
+  height: 28px;
+  border-width: 0;
+  background: #FFF;
+  border-radius: 0.2em;
+  transition: all 0.275s;
+}
+
+/* checked mark aspect */
+.personaldata:not(:checked) + label:after,
+.personaldata:checked + label:after {
+  content: "";
+  background-image: url(../images/checkbox.svg);
+  background-size: cover;
+  position: absolute;
+  top: -9px;
+  left: -7px;
+  transition: all 0.2s;
+  width: 39px;
+  height: 40px;
+}
+
+/* checked mark aspect changes */
+.personaldata:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0) rotate(45deg);
+}
+
+.personaldata:checked + label:after {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+
+/* Disabled checkbox */
+.personaldata:disabled:not(:checked) + label:before,
+.personaldata:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #e9e9e9;
+}
+
+.personaldata:disabled:checked + label:after {
+  color: #777;
+}
+
+.personaldata:disabled + label {
+  color: #aaa;
+}
+
+.personaldata:checked:focus + label:before,
+.personaldata:not(:checked):focus + label:before {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 6px rgba(203, 34, 237, 0.2);
+}
+
+.kolvoperson {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.vacance-rightblock-line.kolvoperson input {
+  width: 50px;
+  background: transparent;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+.inputplusminus {
+  display: flex;
+  padding-top: 3px;
+  padding-left: 40px;
+  align-items: center;
+}
+
+.korzina-leftblock {
+  margin-top: -50px;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.korzina-leftblock .vacance-leftblock-type {
+  width: auto;
+}
+
+.korzina-leftblock.vacance-leftblock label {
+  box-shadow: none;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  padding-left: 0;
+}
+
+.korzina-leftblock .radio input[type=radio] + .radio-label:before {
+  margin-left: 10px;
+}
+
+.korzina-dopi-body {
+  float: left;
+  width: 100%;
+}
+
+.korzina-dopi {
+  float: left;
+  font-size: 22px;
+  width: 50%;
+  box-shadow: 0 0 0 3px white;
+  border-radius: 20px;
+  padding: 20px 25px 25px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+}
+
+/* наименования в корзине */
+.korzina-body {
+  float: left;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.korzina-body-item {
+  background-color: #fff;
+  color: #000;
+  margin: 15px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Geologica-Regular";
+  display: flex;
+  position: relative;
+}
+
+.korzina-body-item-img {
+  width: 200px;
+  float: left;
+}
+
+.korzina-body-item-text {
+  float: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  padding-left: 20px;
+  width: calc(100% - 552px);
+}
+
+.korzina-body-item-title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.korzina-body-item-ves {
+  padding-top: 10px;
+}
+
+.korzina-body-item-clear {
+  top: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.korzina-body-item-cena {
+  float: right;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.korzina-body-item-kolvo {
+  float: right;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #000;
+  height: 60px;
+  margin-top: 36px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.korzina-body-item-kolvo a {
+  width: 33%;
+  border-width: 0;
+  text-align: center;
+}
+
+.korzina-body-item-kolvo input {
+  width: 33%;
+  border-width: 0;
+  background: transparent;
+  text-align: center;
+}
+
+.korzina-itogo {
+  font-size: 24px;
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  line-height: normal;
+  font-family: "Rubik-ExtraBold";
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.korzina-submit {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.korzina-submit .send-button {
+  font-size: 20px;
+  padding: 5px 35px;
+}
+
+.korzina-body-clear {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Geologica-ExtraLight";
+}/*# sourceMappingURL=style.css.map */

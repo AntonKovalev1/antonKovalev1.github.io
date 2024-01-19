@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.webp" sizes="any">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Вакансии</title>
+</head>
+<body>
+    <header>
+        <div class="header__cnt">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__list">
+                        <li><a href="">Хиты</a></li>
+                        <li><a href="">Суши</a></li>
+                        <li><a href="">Роллы</a></li>
+                        <li><a href="">Супы</a></li>
+                        <li><a href="">Лапша/Рис</a></li>
+                        <li><a href="">Салаты</a></li>
+                        <li><a href="">Закуски</a></li>
+                        <li><a href="">Горячее</a></li>
+                        <li><a href="">Гарниры</a></li>
+                        <li><a href="">Десерты</a></li>
+                        <li><a href="">Допы</a></li>
+                        <li><a href="">Соусы</a></li>
+                        <li><a href="">Напитки</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__menu-bottom">
+                    <p class="header__menu-left">Меню ресторана в зале </p>
+                    <div class="header__menu-right">
+                        <label for="dostavka" class="menu__item">
+                            <span>Доставка на дом</span>
+                            <input type="radio" name="menu__item" value="Доставка на дом" id="dostavka">
+                            <div class="menu__item-circle"></div>
+                        </label>
+                        <label for="sam" class="menu__item">
+                            <span>Самовывоз</span>
+                            <input type="radio" name="menu__item" value="Самовывоз" id="sam">
+                            <div class="menu__item-circle"></div>
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="" class="basket">
+                <img src="images/basketicon.webp" alt="">
+                <p class="basket__name">Корзина</p>
+                <p class="basket__value">1953 ₽</p>
+            </a>
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.webp" alt="">
+            </a>
+        </div>
+        <div class="mob__menu">
+            <ul class="mob__menu-list">
+                <li><a href="">Меню ресторана</a></li>
+                <li><a href="">Программа лояльности</a></li>
+                <li><a href="">Доставка и оплата</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Галерея</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="tel:9 (000) 000-00-00">9 (000) 000-00-00</a></li>
+            </ul>
+            <a href="" class="mob__logo">
+                <img src="images/moblogo.webp" alt="">
+            </a>
+            <div class="mob__app-box">
+                <a href="" download="">Скачайте мобильное приложение </a>
+            </div>
+            <div class="mob__close"></div>
+        </div>
+    </header>
+    <main>
+
+
+
+        <a href="" class="app__link-box" download="">
+            <p class="app__link">Скачайте мобильное приложение</p>
+        </a>
+
+    
+  
+
+
+
+        <section class="text_content">
+          
+
+            <div class="container">
+
+                <h1>Вакансии</h1>
+
+                    <div class="container-text">
+                        
+                        <p>Хотите присоединится к нашей команде?</p>
+                        <p>Выберите подходящую вакансию и заполните данные</p>
+
+
+
+                        <div class="vacance-leftblock">
+
+                            <div class="radio vacance-leftblock-type">
+                                <input type="radio" name="typepost" id="oficiant" value="oficiant" checked />
+                                <label class="radio-label" for="oficiant">Официант</label>
+                            </div>
+
+                            <div class="radio vacance-leftblock-type">
+                                <input type="radio" name="typepost" id="hostes" value="hostes" />
+                                <label class="radio-label" for="hostes">Хостес</label>
+                            </div>
+
+                            <div class="radio vacance-leftblock-type">
+                                <input type="radio" name="typepost" id="barmen" value="barmen" />
+                                <label class="radio-label" for="barmen">Бармен</label>
+                            </div>
+
+                            <div class="radio vacance-leftblock-type">
+                                <input type="radio" name="typepost" id="povar" value="povar" />
+                                <label class="radio-label" for="povar">Повар</label>
+                            </div>
+
+                            <div class="radio vacance-leftblock-type">
+                                <input type="radio" name="typepost" id="tehrabotnik" value="tehrabotnik" />
+                                <label class="radio-label" for="tehrabotnik">Технический работник</label>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="vacance-rightblock">
+
+
+                            <div class="vacance-rightblock-line">
+                                <input type="text" name="namefirstlast" placeholder="Имя Фамилия" />
+                            </div>
+
+
+                            <div class="vacance-rightblock-line">
+                                <input type="text" name="vozrast" placeholder="Возраст" />
+                            </div>
+
+
+                            <div class="vacance-rightblock-line">
+                                <input type="text" name="phone" placeholder="Телефон" />
+                            </div>
+
+
+
+                            <div class="vacance-rightblock-line">
+                                <label class="input-file">
+                                    <input type="file" name="file">		
+                                    <span>Прикрепить резюме</span>
+                                </label>
+                            </div>
+
+                            <div class="vacance-rightblock-line">
+                                <p>
+                                    Нажимая на кнопку "Отправить", вы даете согласие на обработку своих персональных данных согласно <a href="/">Политики конфиденциальности</a>
+                                </p>
+                            </div>
+
+                            <div class="vacance-rightblock-line">
+                                <button type="submit" class="send-button">Отправить</button>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__cnt">
+                <div class="footer__top">
+                    <ul class="footer__menu">
+                        <li><a href="">Хиты</a></li>
+                        <li><a href="">Суши</a></li>
+                        <li><a href="">Роллы</a></li>
+                        <li><a href="">Супы</a></li>
+                        <li><a href="">Лапша/Рис</a></li>
+                        <li><a href="">Салаты</a></li>
+                        <li><a href="">Напитки</a></li>
+                        <li><a href="">Закуски</a></li>
+                        <li><a href="">Горячее</a></li>
+                        <li><a href="">Гарниры</a></li>
+                        <li><a href="">Десерты</a></li>
+                        <li><a href="">Допы</a></li>
+                        <li><a href="">Соусы</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li><a href="">Меню ресторана</a></li>
+                        <li><a href="">Программа лояльности</a></li>
+                        <li><a href="">Доставка и оплата</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Галерея</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <div class="footer__info">
+                        <a href="" class="footer__app-link footer__info-item" download="">Скачать приложение на Android</a>
+                        <a href="" class="footer__app-link footer__info-item" download="">Скачать приложение на Iphone</a>
+                        <a href="tel:9 (000) 000-00-00" class="footer__item footer__info-item">9 (000) 000-00-00</a>
+                        <p class="footer__item">Принимаем заказы с 12:00  до 22:00</p>
+                    </div>
+                </div>
+                <a href="" class="footer__logo">
+                    <img src="images/footer__logo.webp" alt="">
+                </a>
+                <div class="footer__copy">
+                    <a href="" target="_blank">Политика конфиденциальности</a>
+                    <a href="https://site-creative.ru/" target="_blank">Создано в Site Creative</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--
+    <script src="js/mobile.js"></script>
+    -->
+</body>
+</html>
