@@ -353,8 +353,6 @@ h1 {
 footer{
     float:left;
     width:100vw;
-    background: linear-gradient(to bottom, rgba(49, 113, 184, 0.6) 0%,rgba(52, 185, 239, 0.6) 100%);
-    min-height:160vw;
 }
 
 .footer-wrap {
@@ -362,6 +360,12 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(to bottom, rgba(49, 113, 184, 0.6) 0%,rgba(52, 185, 239, 0.6) 100%);
+    min-height:160vw;
+}
+
+.popupmenu-left-open .footer-wrap {
+    min-height:100vh;
 }
 
 .footer-logo {
@@ -410,6 +414,106 @@ footer{
 
 
 
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* POPuP MENU LEFT RIGHT */
+
+body.popupmenu-left-open,
+body.popupmenu-right-open {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.popupmenu-left,
+.popupmenu-right {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5501;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    overflow: visible;
+    overflow-anchor: none;
+    -webkit-backface-visibility: hidden;
+    opacity: 1;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    transform: translate3d(-100vw,0,0);
+}
+.popupmenu-right {
+    transform: translate3d(100vw,0,0);
+}
+
+.popupmenu-left-open .popupmenu-left,
+.popupmenu-right-open .popupmenu-right {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: opacity 0.2s ease-out,transform 0.2s ease-out;
+}
+
+.popupmenu-after {
+    content: '';
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    right: 0;
+    width: 100vw;
+    position: fixed;
+    background: rgba(0,0,0,0.75);
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    z-index:5499;
+}
+
+.popupmenu-after.popupmenu-after-display {
+    left:0;
+}
+
+.popupmenu-left-open .popupmenu-after,
+.popupmenu-right-open .popupmenu-after {
+    left:0;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+
+
+.popupmenu-left-body,
+.popupmenu-right-body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+    padding: 0;
+}
+
+.popupmenu-left-close,
+.popupmenu-right-close {
+    float: right;
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    right: 0;
+    font-size: 2em;
+    top: 0;
+    text-align: center;
+    padding-top: 0.5em;
+}
 
 
 
