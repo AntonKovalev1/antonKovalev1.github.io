@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-color: #fff;
+    color: rgba(65, 70, 75, 1);
 }
 
 ol, ul {
@@ -289,6 +290,7 @@ h1 {
     font-size: 0.95em;
     padding: 0 1em;
     text-transform: uppercase;
+    color: rgba(65, 70, 75, 1);
 }
 
 .main-block-3-text ul {
