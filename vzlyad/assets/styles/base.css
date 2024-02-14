@@ -241,8 +241,8 @@ h1 {
     width: 100vw;
     max-width: 100vw;
     flex-direction: column;
-    font-weight: bold;
-    font-size: 0.7em;
+    font-weight: normal;
+    font-size: 0.75em;
     padding-top: 1em;
 }
 
