@@ -43,8 +43,9 @@ $(document).ready(function(){
 
 
 
-    $('.button-menu-right:eq(0)').click(function(){
+    $('.zapisonline').click(function(){
         $('body').addClass('popupmenu-right-open');
+        return false;
     });
 
     function closePopupmenuRight() {
@@ -56,6 +57,9 @@ $(document).ready(function(){
         closePopupmenuRight();
     });
 
+
+
+
     /*
      $('.popupmenu-after:eq(0)').click(function () {
      closePopupmenu();
@@ -63,7 +67,9 @@ $(document).ready(function(){
      */
 
 
-    /*
+
+
+     /*
 
     let x;
     addEventListener('touchstart', e => x = e.changedTouches[0].clientX);

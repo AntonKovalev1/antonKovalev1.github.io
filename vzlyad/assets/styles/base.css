@@ -248,7 +248,7 @@ h1 {
 }
 
 .main-blick-1-li {
-    line-height: 3em;
+    line-height: 2.8em;
     margin: 0.66em 1.6em 0 1.6em;
     border-radius: 1.5em;
     color: rgba(65, 70, 75, 1);
@@ -257,13 +257,13 @@ h1 {
 
 .main-blick-1-icon {
     float: left;
-    line-height: 3em;
     width: 2.5em;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 0.9em;
     margin-right: 0.3em;
     background-size: 1.25em;
+    line-height: 2.8em;
 }
 
 
