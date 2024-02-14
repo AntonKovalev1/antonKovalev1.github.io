@@ -225,6 +225,7 @@ header {
     float: left;
     width: 100vw;
     margin-top: 1.5em;
+    padding-bottom: 2.8em;
 }
 
 h1 {
@@ -264,6 +265,46 @@ h1 {
     background-size: 1.25em;
 }
 
+
+
+
+
+
+
+
+.main-block-3 {
+}
+
+.main-block-3 img {
+    width:100vw;
+}
+
+.main-block-3-text {
+    padding-top:0.6em;
+}
+
+.main-block-3-text h2{
+    font-family: "FuturaMdBT", sans-serif;
+    font-weight: bold;
+    font-size: 0.95em;
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+.main-block-3-text ul {
+    padding: 0.6em 1em;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+.main-block-3-text li.marker {
+    background-image: url(../images/Ellipse22.svg);
+    /* background-repeat: no-repeat; */
+    background-position: left 0.5em;
+    background-repeat: no-repeat;
+    padding-left: 0.9em;
+    background-size: 0.5em;
+}
 
 
 
