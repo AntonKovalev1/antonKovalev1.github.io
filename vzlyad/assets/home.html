@@ -65,11 +65,6 @@
             font-weight: bold;
         }
 
-
-        
-
-
-
         </style>
 
 
@@ -77,53 +72,76 @@
 
     <body>
 
+        <header class="header-top">
 
-        <header>
+            <div class="body-wrap header-body">
 
-            <div class="header-logo">
-                <a href="/"  class="header-logo-a">
-                    <img class="header-logo-img" src="images/logo.png" alt="" />
-                </a>
-            </div>
 
-            <div class="header-button">
-                <a href="/" class="header-button-a">Каталог</a>
-            </div>
+                <div class="header-logo">
+                    <a href="/"  class="header-logo-a">
+                        <img class="header-logo-img" src="images/logo.png" alt="" />
+                    </a>
+                </div>
 
-            <div class="header-button2">
-                <a href="/" class="header-button2-a">Онлайн запись к врачу</a>
-            </div>
 
-            <div class="header-burger">
-                <a href="/" class="header-burger-a">
-                    <img class="header-burger-img" src="images/burger.svg" />
-                </a>
-            </div>
+                <div class="header-burger">
+                    <a href="/" class="header-burger-a">
+                        <img class="header-burger-img" src="images/burger.svg" />
+                    </a>
+                </div>
 
-            <div class="header-phone">
-                <a class="header-phone-a" href="tel:88005000510">8 (800) 500 05 10</a>
-            </div>
 
-            <div class="header-button3">
-                <a href="/" class="zapisonline header-button3-a ">Онлайн запись</a>
+                <div class="header-phone">
+                    <a class="header-phone-a" href="tel:88005000510">8 (800) 500 05 10</a>
+                </div>
+
+
+                <div class="header-button2">
+                    <a href="/" class="header-button2-a">Онлайн запись к врачу</a>
+                </div>                
+
+
+                <div class="header-button">
+                    <a href="/" class="header-button-a">Каталог
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="13.5455" y2="0.999999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="1" y1="6" x2="13.5455" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="1" y1="11" x2="13.5455" y2="11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                           
+                    </a>
+                </div>
+                
+
+                <div class="header-button3">
+                    <a href="/" class="zapisonline header-button3-a ">Онлайн запись</a>
+                </div>
+
+
             </div>
 
         </header>
 
 
         <nav class="header-nav-desktop">
-            <ul>
-                <li><a href="/">О компании</a></li>
-                <li><a href="/">Программа лояльности</a></li>
-                <li><a href="/">Акции</a></li>
-                <li><a href="/">Услуги</a></li>
-                <li><a href="/">Адреса салонов</a></li>
-            </ul>
+
+            <div class="body-wrap nav-body">
+
+                <ul class="header-nav-desktop-ul">
+                    <li class="header-nav-desktop-li"><a href="/">О компании</a></li>
+                    <li class="header-nav-desktop-li"><a href="/">Программа лояльности</a></li>
+                    <li class="header-nav-desktop-li"><a href="/">Акции</a></li>
+                    <li class="header-nav-desktop-li"><a href="/">Услуги</a></li>
+                    <li class="header-nav-desktop-li"><a href="/">Адреса салонов</a></li>
+                </ul>
+
+            </div>
+
         </nav>
 
 
         <!-- (mobile 0.55) -->
-        <aside class="slider">
+        <aside class="slider slider-mobile">
 
             <div class="slider-images swiper">
 
@@ -149,7 +167,6 @@
                         <img src="images/slider-mobile-3.png" loading="lazy" />
                     </div>
 
-
                 </div>
 
                 <div class="swiper-pagination"></div>
@@ -160,68 +177,85 @@
 
 
 
+        <aside class="slider slider-desktop">
+
+
+        </aside>
+
+
+
+
         <main>
 
             <article>
 
                 <div class="main-block-1">
 
-                    <header>
-                        <h1>Сеть салонов оптики Новый взгляд это:</h1>
-                    </header>
+                    <div class="body-wrap ">
 
-                    <div class="main-blick-1-ul">
+                        <header>
+                            <h1>Сеть салонов оптики Новый взгляд это:</h1>
+                        </header>
 
-                        <div class="main-blick-1-li">
-                            <i class="main-blick-1-icon" style="background-image:url(images/icon-1.svg);" />&nbsp;</i>
-                            Лицензированные кабинеты врачей
+                        <div class="main-blick-1-ul">
+
+                            <div class="main-blick-1-li">
+                                <i class="main-blick-1-icon" style="background-image:url(images/icon-1.svg);" />&nbsp;</i>
+                                Лицензированные кабинеты врачей
+                            </div>
+
+                            <div class="main-blick-1-li">
+                                <i class="main-blick-1-icon" style="background-image:url(images/icon-2.svg);" />&nbsp;</i>
+                                Собственные современные мастерские
+                            </div>
+
+                            <div class="main-blick-1-li">
+                                <i class="main-blick-1-icon" style="background-image:url(images/icon-3.svg);" />&nbsp;</i>
+                                Постоянное пополнение коллекций оправ 
+                            </div>
+
+                            <div class="main-blick-1-li">
+                                <i class="main-blick-1-icon" style="background-image:url(images/icon-4.svg);" />&nbsp;</i>
+                                Профессиональное оборудование
+                            </div>
+
+                            <div class="main-blick-1-li">
+                                <i class="main-blick-1-icon" style="background-image:url(images/icon-5.svg);" />&nbsp;</i>
+                                Высококвалифицированные специалисты
+                            </div>
+
+                            <div class="main-blick-1-li">
+                                <i class="main-blick-1-icon" style="background-image:url(images/icon-6.svg);" />&nbsp;</i>
+                                Срочное изготовление очков
+                            </div>
+
+
                         </div>
-
-                        <div class="main-blick-1-li">
-                            <i class="main-blick-1-icon" style="background-image:url(images/icon-2.svg);" />&nbsp;</i>
-                            Собственные современные мастерские
-                        </div>
-
-                        <div class="main-blick-1-li">
-                            <i class="main-blick-1-icon" style="background-image:url(images/icon-3.svg);" />&nbsp;</i>
-                            Постоянное пополнение коллекций оправ 
-                        </div>
-
-                        <div class="main-blick-1-li">
-                            <i class="main-blick-1-icon" style="background-image:url(images/icon-4.svg);" />&nbsp;</i>
-                            Профессиональное оборудование
-                        </div>
-
-                        <div class="main-blick-1-li">
-                            <i class="main-blick-1-icon" style="background-image:url(images/icon-5.svg);" />&nbsp;</i>
-                            Высококвалифицированные специалисты
-                        </div>
-
-                        <div class="main-blick-1-li">
-                            <i class="main-blick-1-icon" style="background-image:url(images/icon-6.svg);" />&nbsp;</i>
-                            Срочное изготовление очков
-                        </div>
-
-
                     </div>
-
 
                 </div>
 
                 <div class="main-block-3">
 
-                    <div class="main-block-3-img"">
-                        <img src="images/Group4901.jpg" />
-                    </div>
+                    <div class="body-wrap ">
 
-                    <div class="main-block-3-text">
-                        <h2>Запись к врачу</h2>
-                        <ul>
-                            <li>в удобном онлайн формате </li>
-                            <li class="marker">консультация врача/оптометриста</li>
-                            <li class="marker">подбор очков/линз</li>
-                        </ul>
-                        <a class="zapisonline bluebutton main-block-3-a" href="#">Записаться</a>
+                        <div class="main-block-3-img"">
+                            <img src="images/Group4901.jpg" />
+                        </div>
+
+                        <div class="main-block-3-text">
+                            <h2>Запись к врачу</h2>
+
+                            <ul>
+                                <li class="nomarker">в удобном онлайн формате </li>
+                                <li class="marker">консультация врача/оптометриста</li>
+                                <li class="marker">подбор очков/линз</li>
+                            </ul>
+
+                            <a class="zapisonline bluebutton main-block-3-a" href="#">Записаться</a>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -229,14 +263,17 @@
 
                 <div class="main-block-4">
 
-                    <div class="main-block-4-text">
-                        Еще больше выгоды<br/> с нашей программой<br/> лояльности 
-                    </div>
+                    <div class="body-wrap ">
 
-                    <div class="main-block-4-img">
-                        <img src="images/Group4892.png" alt=""/>
-                    </div>
+                        <div class="main-block-4-text">
+                            Еще больше выгоды<br/> с нашей программой<br/> лояльности 
+                        </div>
 
+                        <div class="main-block-4-img">
+                            <img src="images/Group4892.png" alt=""/>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -244,52 +281,48 @@
 
                 <div class="main-block-5">
 
-                    <div class="main-block-5-text">
-                        Наши довольные клиенты
-                    </div>
+                    <div class="body-wrap ">
 
-                    <div class="main-block-5-img">
-                        <img src="images/clients.png" alt=""/>
-                    </div>
+                            <div class="main-block-5-text">
+                            Наши довольные клиенты
+                        </div>
 
-                    <!--
-                    <div class="main-block-5-otziv">
-                        <span class="main-block-5-otziv-span"><img src="images/otziv1.png" alt=""/></span>
-                        <span class="main-block-5-otziv-span"><img src="images/otziv2.png" alt=""/></span>
-                    </div>
-                    -->
+                        <div class="main-block-5-img">
+                            <img src="images/clients.png" alt=""/>
+                        </div>
 
 
-                    <div class="main-block-5-list">
-                        <div class="main-block-5-list-scroll">
-                            <div class="main-block-5-list-wrap">
+                        <div class="main-block-5-list">
+                            <div class="main-block-5-list-scroll">
+                                <div class="main-block-5-list-wrap">
 
-                                <div class="main-block-5-item">
-                                    <a class="main-block-5-item-a" href="#">
-                                        <span class="main-block-5-item-img" style="background-image:url(images/otziv1.png?12);" /></span>
-                                    </a>
+                                    <div class="main-block-5-item">
+                                        <a class="main-block-5-item-a" href="#">
+                                            <span class="main-block-5-item-img" style="background-image:url(images/otziv1.png?12);" /></span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="main-block-5-item">
+                                        <a class="main-block-5-item-a" href="#">
+                                            <span class="main-block-5-item-img" style="background-image:url(images/otziv2.png?12);" /></span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="main-block-5-item">
+                                        <a class="main-block-5-item-a" href="#">
+                                            <span class="main-block-5-item-img" style="background-image:url(images/otziv3.png?12);" /></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="main-block-5-item">
+                                        <a class="main-block-5-item-a" href="#">
+                                            <span class="main-block-5-item-img" style="background-image:url(images/otziv1.png?12);" /></span>
+                                        </a>
+                                    </div>
+
                                 </div>
-
-
-                                <div class="main-block-5-item">
-                                    <a class="main-block-5-item-a" href="#">
-                                        <span class="main-block-5-item-img" style="background-image:url(images/otziv2.png?12);" /></span>
-                                    </a>
-                                </div>
-
-
-                                <div class="main-block-5-item">
-                                    <a class="main-block-5-item-a" href="#">
-                                        <span class="main-block-5-item-img" style="background-image:url(images/otziv3.png?12);" /></span>
-                                    </a>
-                                </div>
-
-                                <div class="main-block-5-item">
-                                    <a class="main-block-5-item-a" href="#">
-                                        <span class="main-block-5-item-img" style="background-image:url(images/otziv1.png?12);" /></span>
-                                    </a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -364,8 +397,6 @@
                 </div>
                 -->
 
-
-
             </article>
 
         </main>
@@ -373,46 +404,50 @@
 
         <footer>
 
-            <section class="footer">
-                <div class="footer-wrap">
+            <div class="body-wrap ">
 
-                <div class="footer-logo">
-                    <a href="/"  class="footer-logo-a">
-                        <img class="footer-logo-img" src="images/logo.png" alt="" />
-                    </a>
-                </div>
+                <section class="footer">
+                    <div class="footer-wrap">
 
-                <div class="footer-phone">
-                    <a class="footer-phone-a" href="tel:88005000510">8 (800) 500 05 10</a>
-                </div>
+                        <div class="footer-logo">
+                            <a href="/"  class="footer-logo-a">
+                                <img class="footer-logo-img" src="images/logo.png" alt="" />
+                            </a>
+                        </div>
 
-                <div class="footer-button3">
-                    <a href="/" class="zapisonline footer-button3-a">Онлайн запись</a>
-                </div>
+                        <div class="footer-phone">
+                            <a class="footer-phone-a" href="tel:88005000510">8 (800) 500 05 10</a>
+                        </div>
 
-                <nav class="footer-nav">
-                    <a href="#">О компании</a>
-                    <a href="#">Каталог</a>
-                    <a href="#">Акции</a>
-                    <a href="#">Мягкие контактные линзы</a>
-                    <a href="#">Программа лояльности</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Адреса салонов</a>
-                    <a href="#">Линзы для очков</a>
-                    <a href="#">Детская оптика</a>
-                    <a href="#">Оправы</a>
-                    <a href="#">Аксессуары</a>
-                    <a href="#">Солнцезащитные очки</a>
-                    <a href="#">Средства по уходу</a>
-                </nav>
+                        <div class="footer-button3">
+                            <a href="/" class="zapisonline footer-button3-a">Онлайн запись</a>
+                        </div>
 
-                <div class="footer-img">
-                    <img src="images/Group498.svg" alt="" />
-                </div>
+                        <nav class="footer-nav">
+                            <a href="#">О компании</a>
+                            <a href="#">Каталог</a>
+                            <a href="#">Акции</a>
+                            <a href="#">Мягкие контактные линзы</a>
+                            <a href="#">Программа лояльности</a>
+                            <a href="#">Услуги</a>
+                            <a href="#">Адреса салонов</a>
+                            <a href="#">Линзы для очков</a>
+                            <a href="#">Детская оптика</a>
+                            <a href="#">Оправы</a>
+                            <a href="#">Аксессуары</a>
+                            <a href="#">Солнцезащитные очки</a>
+                            <a href="#">Средства по уходу</a>
+                        </nav>
+
+                        <div class="footer-img">
+                            <img src="images/Group498.svg" alt="" />
+                        </div>
+
+                    </div>
+
+                </section>
 
             </div>
-
-            </section>
 
         </footer>
 
@@ -437,7 +472,7 @@
                             <rect width="24" height="24" fill="white"/>
                             </clipPath>
                             </defs>
-                            </svg>
+                        </svg>
                     </div>
         
                     <!-- Left popupmenu -->
@@ -465,8 +500,7 @@
                             <rect width="24" height="24" fill="white"/>
                             </clipPath>
                             </defs>
-                            </svg>
-                            
+                        </svg> 
                     </div>
                     <!-- Right popupmenu -->
                 </div>
