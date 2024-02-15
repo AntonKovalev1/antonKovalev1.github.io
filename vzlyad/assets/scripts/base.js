@@ -41,10 +41,16 @@ $(document).ready(function(){
 
 
 
-
+    function openPopupmenuRight() {
+        $('body').addClass('popupmenu-right-open');
+    }
 
     $('.zapisonline').click(function(){
-        $('body').addClass('popupmenu-right-open');
+
+        if ($('body').hasClass('popupmenu-left-open')) {
+            $('body').addClass('popupmenu-right-open');
+        }
+        openPopupmenuRight();
         return false;
     });
 
@@ -89,7 +95,7 @@ $(document).ready(function(){
     */
 
 
-    $('.header-burger-a:eq(0)').click();
+    //$('.header-burger-a:eq(0)').click();
 
 
 
