@@ -13,15 +13,25 @@ $(document).ready(function(){
 
 
     $('.header-burger-a:eq(0)').click(function(){
+
         if (!$('#popupmenu-left-body').attr('popupmenu-left-body')) {
             $('#popupmenu-left-body').append($('.footer-wrap').parent().html());
             $('#popupmenu-left-body').attr('popupmenu-left-body', true);
+
+            // Обработчик на кнопку запись онлайн
+            $('#popupmenu-left-body .zapisonline').click(function(){
+                zapisonlineOpen();
+                return false;
+            });
+
         }
 
         $('body').addClass('popupmenu-left-open');
 
        return false;
+
     });
+
 
     function closePopupmenuLeft() {
         $('body').removeClass('popupmenu-left-open');
@@ -45,14 +55,25 @@ $(document).ready(function(){
         $('body').addClass('popupmenu-right-open');
     }
 
-    $('.zapisonline').click(function(){
+    function zapisonlineOpen(){
 
         if ($('body').hasClass('popupmenu-left-open')) {
-            $('body').addClass('popupmenu-right-open');
+            closePopupmenuLeft();
+            setTimeout(function(){
+                openPopupmenuRight();
+            }, 300);
         }
-        openPopupmenuRight();
+        else
+            openPopupmenuRight();
+
+    }
+
+    $('.zapisonline').click(function(){
+        zapisonlineOpen();
         return false;
     });
+
+
 
     function closePopupmenuRight() {
         $('body').removeClass('popupmenu-right-open');
