@@ -527,7 +527,7 @@ h1 {
 }
 
 .main-block-6-item:last-child {
-    padding-right:1em;
+    /*padding-right:1em;*/
 }
 
 .main-block-6-item-a {
@@ -809,19 +809,25 @@ body.popupmenu-right-open {
     body {
         font-size: 24px;
         background-color:#F2F2F2;
+        background-image: url(../images/background.png);
+        background-position:top center;
+        background-repeat: repeat-x;
     }
 
     .body-wrap {
-        display: table;
+        display: block;
         width: 990px;
         margin: 0 auto;
         position: relative;
     }
 
-    .slider-mobile {
-        display:none;
+    .slider img {
+        width: auto;
     }
 
+    .slider-mobile {
+
+    }
 
     .bluebutton {
         border-radius: 2em;
@@ -948,13 +954,25 @@ body.popupmenu-right-open {
 
 
 
+    .slider-aside {
+        float:left;
+        width:100%;
+    }
 
     .slider-desktop {
         display: block;
-        height: 17.2em;
+        height: 12.4em;
+        width:100%;
+        float:left;
     }
 
-
+    .slider-desktop .swiper-slide {
+        float: left;
+        height: 12.4em;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
 
 
 
@@ -1174,6 +1192,7 @@ body.popupmenu-right-open {
         margin: 0;
         width:33%;
         min-width:33%;
+        padding-bottom: 2em;
     }
 
     .main-block-6-item-img {
@@ -1281,7 +1300,7 @@ body.popupmenu-right-open {
     }
 
     .body-wrap {
-        display: table;
+        display: block;
         width: 1200px;
         margin: 0 auto;
     }
