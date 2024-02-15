@@ -91,7 +91,7 @@ body {
 
 @media (min-width: 768px) {
     body {
-        font-size: 26px;
+        font-size: 32px;
     }
 }
 
@@ -402,6 +402,10 @@ h1 {
     margin: -2em 0 0 0;
 }
 
+.main-block-5-otziv-span img{
+
+}
+
 .main-block-5-butt {
     margin-top: -2.2em;
     float: left;
@@ -431,11 +435,17 @@ h1 {
     padding: 0 3em 0 0;
 }
 
+.main-block-6-butt {
+    margin-top: -1em;
+    float: left;
+    width: 100%;
+}
+
 .main-block-6-list {
     float: left;
     width: 100vw;
     overflow: hidden;
-    height: calc(94vw);
+    height: 20em;
 }
 
 .main-block-6-list-scroll {
@@ -443,7 +453,7 @@ h1 {
     overflow-y: hidden;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    height: calc(96vw);
+    height: 21em;
 }
 
 .main-block-6-list-wrap {
@@ -508,14 +518,16 @@ footer{
     width:100vw;
 }
 
+.footer {
+}
+
 .footer-wrap {
-    min-height: 110vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to bottom, rgba(49, 113, 184, 0.6) 0%,rgba(52, 185, 239, 0.6) 100%);
-    min-height:160vw;
 }
+
 
 .popupmenu-left-open .footer-wrap {
     min-height:100vh;
@@ -547,6 +559,7 @@ footer{
 
 .footer-button3 {
     margin-top: 0.3em;
+    margin-bottom: 2em;
 }
 
 .footer-button3-a {
@@ -563,11 +576,32 @@ footer{
 }
 
 
+.footer-nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
+.footer-nav a {
+    width: calc(50% - 1.5em);
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 2.13em;
+    padding-left: 1.5em;
+}
 
+.footer-img {
 
+}
 
-
+.footer-img img {
+    width: 9em;
+}
 
 
 
