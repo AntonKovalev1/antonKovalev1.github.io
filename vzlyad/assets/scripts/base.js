@@ -125,6 +125,7 @@ $(document).ready(function(){
 
 
 
+    if ($('.slider-mobile').length)
     var swiper = new Swiper(".slider-mobile .slider-images", {
 
         createElements: false,
@@ -141,6 +142,7 @@ $(document).ready(function(){
     });
 
 
+    if ($('.slider-desktop').length)
     var swiper2 = new Swiper(".slider-desktop .slider-images", {
 
         createElements: false,
@@ -158,39 +160,41 @@ $(document).ready(function(){
     });
 
 
+    if ($('.carusell').length) {
+
+        var swiper3 = new Swiper(".carusell", {
+
+
+            slidesPerView: 3,
+            spaceBetween: 30,
+
+            loop: true,
+
+            navigation: {
+                nextEl: ".carusell .swiper-button-next",
+                prevEl: ".carusell .swiper-button-prev",
+            },
+
+            speed: 200,
+
+            on: {
+                init: function () {
+
+                },
+                activeIndexChange: function(e) {
+                    //console.log(e);
+                    var aslide = e.activeIndex + 1;
+                    $('.main-block-5-item').removeClass('main-block-5-item-center');
+                    $('.carusell').find('.main-block-5-item:eq(' + aslide + ')').addClass('main-block-5-item-center');
+
+                },
+            },
+        
+        });
     
-    var swiper3 = new Swiper(".carusell", {
+        swiper3.slideTo(0);
 
-
-        slidesPerView: 3,
-        spaceBetween: 30,
-
-        loop: true,
-
-        navigation: {
-            nextEl: ".carusell .swiper-button-next",
-            prevEl: ".carusell .swiper-button-prev",
-        },
-
-        speed: 200,
-
-        on: {
-            init: function () {
-
-            },
-            activeIndexChange: function(e) {
-                //console.log(e);
-                var aslide = e.activeIndex + 1;
-                $('.main-block-5-item').removeClass('main-block-5-item-center');
-                $('.carusell').find('.main-block-5-item:eq(' + aslide + ')').addClass('main-block-5-item-center');
-
-            },
-          },
-       
-    });
- 
-    swiper3.slideTo(0);
- 
+    }
 
 
 
