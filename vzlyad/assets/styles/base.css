@@ -66,9 +66,16 @@ body {
     font-family: "DINPro", sans-serif;
 }
 
+
 @media (min-width: 280px) {
     body {
         font-size: 13px;
+    }
+}
+
+@media (min-width: 320px) {
+    body {
+        font-size: 16px;
     }
 }
 
@@ -271,6 +278,7 @@ h1 {
     border-radius: 1.5em;
     color: rgba(65, 70, 75, 1);
     box-shadow: 0 0 0 0.1em rgba(49, 113, 184, 1);
+    background-color: rgba(242, 242, 242, 1);
 }
 
 .main-blick-1-icon {
@@ -781,6 +789,121 @@ body.popupmenu-right-open {
     text-align: center;
     padding-top: 0.5em;
 }
+
+
+
+
+
+
+
+.main-block-content {
+    float: left;
+    width: 100%;
+    max-width: 100vw;
+    padding-bottom: 3em;
+}
+
+
+.main-block-content header {
+    float: left;
+    margin-top: 2em;
+}
+
+.main-block-content header nav {
+    padding-left:1em;
+}
+
+.main-block-content header nav a {
+    color: rgba(65, 70, 75, 1);
+    font-size: 0.85em;
+}
+
+.main-block-content h1 {
+    font-size: 1.7em;
+    padding: 1.45em 0.49em 1em;
+    text-transform: none;
+}
+
+.main-block-content section {
+    float:left;
+    width:100%;
+    max-width:100vw;
+}
+
+.main-block-content p {
+    padding: 0 0.5em 1.5em 1em;
+    line-height: 1.15;
+    font-size: 0.93em;
+}
+
+.main-block-content h2 {
+    font-family: "FuturaMdBT", sans-serif;
+    font-size: 1.7em;
+    padding: 1.45em 0.6em 1em;
+    text-transform: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-block-content p.p-bold {
+    font-family: "FuturaMdBT", sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.main-block-content p.p-border {
+    color: rgba(65, 70, 75, 1);
+    box-shadow: 0 0 0 0.1em rgba(49, 113, 184, 1);
+    background-color: rgba(242, 242, 242, 1);
+    margin: -0.4em 1.3em 1.5em;
+    border-radius: 2em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+
+.main-block-content h3 {
+    font-family: "FuturaMdBT", sans-serif;
+    font-size: 1.7em;
+    padding: 0.75em 0.6em 1em;
+    text-transform: none;
+    text-transform: none;
+    font-weight: bold;
+}
+
+
+.main-block-content p.p-small {
+    font-size: 0.8em;
+    line-height: 1.18em;
+}
+
+
+.main-block-content p.p-boldcenter {
+    font-family: "FuturaMdBT", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0.2em 0.5em 1em 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
