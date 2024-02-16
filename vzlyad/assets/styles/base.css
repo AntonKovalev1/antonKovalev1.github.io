@@ -117,6 +117,26 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------ Mobile --------*/
 .desktoponly {
     display: none;    
@@ -244,8 +264,6 @@ header {
 
 
 
-
-
 .main-block-1 {
     float: left;
     width: 100%;
@@ -336,8 +354,6 @@ h1 {
     background-size: 0.5em;
 }
 
-.main-block-3-a {
-}
 
 .bluebutton {
     display: table;
@@ -483,9 +499,7 @@ h1 {
     width: 100%;
 }
 
-.main-block-5-a {
 
-}
 
 
 
@@ -542,9 +556,6 @@ h1 {
     min-width: 15em;
 }
 
-.main-block-6-item:last-child {
-    /*padding-right:1em;*/
-}
 
 .main-block-6-item-a {
     float: left;
@@ -602,8 +613,7 @@ footer{
     background: linear-gradient(to bottom, rgba(49, 113, 184, 0.6) 0%,rgba(52, 185, 239, 0.6) 100%);
 }
 
-.footer {
-}
+
 
 .footer-wrap {
     display: flex;
@@ -629,9 +639,7 @@ footer{
 }
 
 
-.footer-phone {
 
-}
 
 .footer-phone-a {
     text-decoration: none;
@@ -678,9 +686,6 @@ footer{
     padding-left: 1.5em;
 }
 
-.footer-img {
-
-}
 
 .footer-img img {
     width: 9em;
@@ -958,9 +963,7 @@ body.popupmenu-right-open {
         width: auto;
     }
 
-    .slider-mobile {
-
-    }
+ 
 
     .bluebutton {
         border-radius: 2em;
@@ -1072,11 +1075,12 @@ body.popupmenu-right-open {
          
     .header-nav-desktop-ul {
         display: flex;
-        width: 100%;
+        width: 99%;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
     }
 
     .header-nav-desktop-li {
@@ -1578,7 +1582,118 @@ body.popupmenu-right-open {
 
 
 
+
+
+
+
+
+
+
+
+
+    .main-block-content header {
+        margin-top: 1em;
+    }
+
+    .main-block-content header nav {
+        padding-left: 0.4em;
+        font-size: 0.62em;
+    }
+
+    .main-block-content h1 {
+        font-size: 1.1em;
+        padding: 1.45em 0.49em 0.5em 0.2em;
+        text-transform: none;
+    }
+
+    .main-block-content p {
+        padding: 0.9em 0.5em 0.9em 0.5em;
+        line-height: 1.2;
+        font-size: 0.5em;
+        }
+
+    .main-block-content p.p-imageright {
+        float: right;
+        padding: 0;
+        font-size: 1em;
+        line-height: 1;
+        margin-top: -1.6em;
+        }
+
+    .about_iamge {
+        width: 11.4em;
+    }
+
+    .main-block-content h2 {
+        padding: 1.15em 0.6em 1em 0.2em;
+        font-size: 1.25em;
+    }
+
+    .main-block-content p.p-border {
+        font-size: 1.1em;
+        padding: 0.7em;
+        box-shadow: 0 0 0 0.05em rgba(49, 113, 184, 1), -0.5em -0.5em 1em #fff, 0.5em 0.5em 1em rgb(0 0 0 / 17%);
+    }
+
+
+    .for-center-desktop {
+        font-size: 0.6em;
+        display: table;
+        width: 83%;
+        margin: 0 auto;        
+    }
+
+    .for-center-desktop p.p-bold {
+        float: left;
+        width: 100%;
+        padding: 0.1em 0.5em 0.1em 0.5em;
+    }
+
+    .for-center-desktop p.p-border {
+        float:left;
+        width:auto;
+        font-size: 1.1em;
+        padding: 0.7em 1.5em;
+        margin: 0.4em 1.3em 1em 0.5em;
+    }
+
+
+
+    .main-block-content h3 {
+        font-size: 1.2em;
+        padding: 1.6em 0.6em 1em 0.2em;
+    }
+
+
+    .main-block-content p.p-small {
+        line-height:1.25em;
+        font-size: 0.5em;
+    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
