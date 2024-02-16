@@ -124,6 +124,7 @@ $(document).ready(function(){
 
 
 
+    
     var swiper = new Swiper(".slider-mobile .slider-images", {
 
         createElements: false,
@@ -138,7 +139,6 @@ $(document).ready(function(){
         spaceBetween: 0,
 
     });
-
 
 
     var swiper2 = new Swiper(".slider-desktop .slider-images", {
@@ -156,6 +156,48 @@ $(document).ready(function(){
         spaceBetween: 0,
 
     });
+
+
+    
+    var swiper3 = new Swiper(".carusell", {
+
+
+        slidesPerView: 3,
+        spaceBetween: 30,
+
+        loop: true,
+
+        navigation: {
+            nextEl: ".carusell .swiper-button-next",
+            prevEl: ".carusell .swiper-button-prev",
+        },
+
+        speed: 200,
+
+        on: {
+            init: function () {
+              console.log('swiper initialized');
+            },
+            activeIndexChange: function(e) {
+                //console.log(e);
+                var aslide = e.activeIndex + 1;
+                $('.main-block-5-item').removeClass('main-block-5-item-center');
+                $('.carusell').find('.main-block-5-item:eq(' + aslide + ')').addClass('main-block-5-item-center');
+
+            },
+          },
+       
+    });
+ 
+    swiper3.slideTo(0);
+ 
+
+
+
+
+
+
+
 
 
 

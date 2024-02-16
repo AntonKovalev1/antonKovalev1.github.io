@@ -209,6 +209,7 @@ header {
     margin-top: 2em;
 }
 
+
 .slider img {
     width:100%;
     min-height: 0.55vw;
@@ -545,6 +546,8 @@ h1 {
     display: block;
 }
 
+
+
 .main-block-6-item-img {
     float: left;
     width: 13.3em;
@@ -841,9 +844,12 @@ body.popupmenu-right-open {
         font-size: 0.6em;
         font-weight: normal;
         padding: 0 2em;
+        box-shadow: inset -0.3em -0.2em 0.7em rgb(0 0 0 / 22%);
     }
 
-
+    .bluebutton:hover {
+        box-shadow: inset -0.3em -0.2em 0.7em rgb(0 0 0 / 22%), inset 0.1em 0.1em 0.2em rgb(0 0 0 / 33%);
+    }
 
     .header-top {
         background-color: #F3F7F8;
@@ -903,8 +909,12 @@ body.popupmenu-right-open {
         display: block;
         padding: 0 1.6em;
         font-size: 0.65em;
-        box-shadow: inset 0 0 0.7em rgb(0 0 0 / 22%);
+        box-shadow: inset -0.3em -0.2em 0.7em rgb(0 0 0 / 22%);
     }
+
+    .header-button-a:hover {
+        box-shadow: inset -0.3em -0.2em 0.7em rgb(0 0 0 / 22%), inset 0.1em 0.1em 0.2em rgb(0 0 0 / 33%);
+        }
 
     .header-button2-a {
         background-color: rgba(49, 113, 184, 1);
@@ -915,10 +925,11 @@ body.popupmenu-right-open {
         display: block;
         padding: 0 1.4em;
         font-size: 0.65em;
-        box-shadow: inset 0 0 0.7em rgba(52, 185, 239, 1);
     }
 
-
+    .header-button2-a:hover {
+        box-shadow: inset 0 0 0.7em rgba(52, 185, 239, 1);
+    }
 
 
 
@@ -948,6 +959,13 @@ body.popupmenu-right-open {
     .header-nav-desktop-li {
         line-height: 3em;
         font-size: 0.6em;
+    }
+
+
+    .header-nav-desktop-li.header-nav-desktop-li-active:after {
+        content: url(../images/Chevron_Bottom.png);
+        position: absolute;
+        margin-top: 0.4em; 
     }
 
     .header-nav-desktop-ul a {
@@ -992,10 +1010,17 @@ body.popupmenu-right-open {
         content: url('../images/slider-next.svg');
     }
 
+    .slider-desktop .swiper-button-next:hover:after {
+        content: url('../images/slider-next2.svg');
+    }
+
     .slider-desktop .swiper-button-prev:after {
         content: url('../images/slider-prev.svg');
     }
 
+    .slider-desktop .swiper-button-prev:hover:after {
+        content: url('../images/slider-prev2.svg');
+    }
 
 
 
@@ -1080,6 +1105,29 @@ body.popupmenu-right-open {
         margin-top:2em;
     }
 
+    .main-block-3-text li.marker {
+        background-image: url(../images/circle.svg);
+    }
+
+    .main-block-3-circle1,
+    .main-block-3-circle2 {
+        position: absolute;
+        width: 7.2em;
+        height: 7.2em;
+        background-color: rgba(52, 185, 239, 0.6);
+        background: linear-gradient(to bottom, rgba(49, 113, 184, 0.6) 0%,rgba(52, 185, 239, 0.6) 100%);
+        border-radius: 50%;
+        right: 7em;
+        top: 0.3em;
+    }
+
+    .main-block-3-circle2 {
+        width: 4em;
+        height: 4em;
+        right: 11.2em;
+        top: 4.5em;
+    }
+
 
 
 
@@ -1117,24 +1165,26 @@ body.popupmenu-right-open {
         position: relative;
     }
 
+    .main-block-5-img {
+        float: left;
+        width: 13em;
+        margin-top: 0em;
+    }
+
     .main-block-5-text {
         margin: 2.7em 0 0 5.6em;
         font-size: 1.2em;
     }
 
-    .main-block-5-img {
-        display:none;        
-    }
-
     .main-block-5-butt {
-        margin-top: 2.3em;
+        margin-top: 2.1em;
         float: none;
         width: auto;
-        margin-left: 4em;
+        margin-left: 14em;
         position: absolute;
-        top: 4.3em;
-        left: 11.5em;
+        z-index: 2;
     }
+
     .main-block-5-butt .bluebutton {
         padding:0 3.5em;
         font-size:0.7em;
@@ -1145,6 +1195,71 @@ body.popupmenu-right-open {
         max-width: 25em;
         margin-top: 3em;
     }
+
+    .main-block-5-item.swiper-slide {
+        width: auto;
+        margin:0;
+    }
+
+    .main-block-5-item-a {
+        transform: scale(0.7);
+        transition: transform 0.2s linear;
+    }
+
+    .main-block-5-item-center .main-block-5-item-a  {
+        transform: scale(1.1);
+        transition: transform 0.2s linear;
+    }
+
+    .main-block-5-item-img {
+        margin-top: 0;
+    }
+
+
+
+
+
+    .main-block-5 .carusell {
+        position: absolute;
+        width: 27em;
+        padding: 3em 2em 3em 0;
+        left: -1.5em;
+        top: 3em;
+    }
+
+    .carusell .swiper-button-prev,
+    .carusell .swiper-button-next {
+        bottom: 5.3em;
+        top: auto;
+        width: 1em;
+        height: 1em;
+        background-color: rgba(130, 175, 215, 1);
+        box-shadow: inset 0.1em 0.1em 0.2em rgb(0 0 0 / 40%);
+        left: 50%;
+        padding: 0.5em;
+        border-radius: 50%;
+        font-size: 0.55em;
+    }
+
+    .carusell .swiper-button-prev:hover,
+    .carusell .swiper-button-next:hover {
+        background-color: rgba(52, 185, 239, 1);
+        box-shadow: 0.5em 0.5em 2em rgb(0 0 0 / 20%);
+    }
+
+
+    .carusell .swiper-button-prev {
+        margin-left: 2em;
+        content: url(../images/arraw-left.svg);
+        padding: 0.5em 0.6em 0.5em 0.4em;
+    }
+
+    .carusell .swiper-button-next {
+        margin-left: 5em;
+        content: url(../images/arraw-right.svg);
+        padding: 0.5em 0.4em 0.5em 0.6em;
+    }
+
 
 
 
@@ -1222,6 +1337,31 @@ body.popupmenu-right-open {
         height:11em;
     }
 
+    .main-block-6-item-a:after {
+        content: '';
+        float: right;
+        width: 1.1em;
+        height: 1.1em;
+        background-image: url(../images/arraw-right.svg);
+        background-repeat: no-repeat;
+        background-position: 54% center;
+        background-size: 0.8em;
+        margin: -3.5em 3.2em 0 0;
+        background-color: rgba(130, 175, 215, 1);
+        box-shadow: inset 0.1em 0.1em 0.2em rgb(0 0 0 / 40%);
+        border-radius: 50%;
+        font-size: 0.45em;
+        padding: 0.7em;
+
+    }
+
+    .main-block-6-item-a:hover:after {
+        background-color: rgba(52, 185, 239, 1);
+        box-shadow: 0.5em 0.5em 2em rgb(0 0 0 / 20%);
+    }
+
+
+
     .main-block-6-list-scroll {
         height: 17em;
         padding:0;
@@ -1285,6 +1425,10 @@ body.popupmenu-right-open {
         padding-left: 0;
         font-size: 0.48em;
         line-height: 1.3em;
+    }
+    
+    .footer-nav a:hover {
+        color:#000;
     }
 
     .footer-img {
