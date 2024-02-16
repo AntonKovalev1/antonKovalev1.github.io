@@ -66,6 +66,13 @@ body {
     font-family: "DINPro", sans-serif;
 }
 
+@media (min-width: 280px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+
 @media (min-width: 360px) {
     body {
         font-size: 18px;
@@ -975,6 +982,21 @@ body.popupmenu-right-open {
     }
 
 
+    .slider-desktop .swiper-button-next,
+    .slider-desktop .swiper-button-prev {
+            width:auto;
+        height:auto;
+    }
+
+    .slider-desktop .swiper-button-next:after {
+        content: url('../images/slider-next.svg');
+    }
+
+    .slider-desktop .swiper-button-prev:after {
+        content: url('../images/slider-prev.svg');
+    }
+
+
 
 
     .main-block-1 {
@@ -1287,6 +1309,8 @@ body.popupmenu-right-open {
 
 
 }
+
+
 
 
 

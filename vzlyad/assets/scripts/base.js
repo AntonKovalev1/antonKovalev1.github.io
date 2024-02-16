@@ -124,12 +124,12 @@ $(document).ready(function(){
 
 
 
-    var swiper = new Swiper(".slider-images", {
+    var swiper = new Swiper(".slider-mobile .slider-images", {
 
-        createElements: true,
+        createElements: false,
 
         pagination: {
-            el: ".swiper-pagination"
+            el: ".slider-mobile .swiper-pagination"
         },
 
         lazy: true,
@@ -138,6 +138,25 @@ $(document).ready(function(){
         spaceBetween: 0,
 
     });
+
+
+
+    var swiper2 = new Swiper(".slider-desktop .slider-images", {
+
+        createElements: false,
+
+        navigation: {
+            nextEl: ".slider-desktop .swiper-button-next",
+            prevEl: ".slider-desktop .swiper-button-prev",
+        },
+
+        lazy: true,
+
+        speed: 200,
+        spaceBetween: 0,
+
+    });
+
 
 
 });
