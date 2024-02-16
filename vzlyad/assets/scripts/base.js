@@ -124,7 +124,7 @@ $(document).ready(function(){
 
 
 
-    
+
     var swiper = new Swiper(".slider-mobile .slider-images", {
 
         createElements: false,
@@ -176,7 +176,7 @@ $(document).ready(function(){
 
         on: {
             init: function () {
-              console.log('swiper initialized');
+
             },
             activeIndexChange: function(e) {
                 //console.log(e);

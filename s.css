@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    padding:2em;
+}
+
+a {
+    display: block;
+    line-height:2em;
+    padding:0 1em;
+    text-decoration:none;
+    color:#000;
+}
+
+
+a:visited {
+    color:#550051;
+}
+
+
+a:hover,
+a:visited:hover {
+    background-color:#FFFFaa;
+    color:red;
+}
+
+a.toBack,
+a.toBack:visited,
+a.toBack:visited:hover  {
+    font-size:0.8em;
+    background:none;
+    color:#aaa;
+    padding-left:0.5em;
+    background:#ffffff;
+}

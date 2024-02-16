@@ -994,6 +994,7 @@ body.popupmenu-right-open {
     .slider-desktop .swiper-slide {
         float: left;
         height: 12.4em;
+        height: 307px;
         width: 100%;
         background-position: center center;
         background-size: cover;
@@ -1471,6 +1472,11 @@ body.popupmenu-right-open {
         display: block;
         width: 1200px;
         margin: 0 auto;
+    }
+
+
+    .slider-desktop .swiper-slide {
+        height: 393px;
     }
 
 }
