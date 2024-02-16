@@ -1671,6 +1671,37 @@ body.popupmenu-right-open {
     }
 
 
+    .for-4colums {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .for-4colums div {
+        width:50%;
+    }
+
+    .main-block-content p.p-boldcenter {
+        font-size: 0.68em;
+    }
+
+    .for-4colums div p.p-boldcenter {
+        padding:0;
+    }
+
+    .main-block-content-flex {
+        font-size: 0.56em;
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .main-block-content {
+        padding-bottom:0;
+    }
+
 
 
 
